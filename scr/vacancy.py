@@ -10,7 +10,7 @@ class Vacancy:
         return self.get_salary() < other.get_salary()
 
     def _get_salary_from_str(self):
-        """Извлекает минимальную зарплату и возвращает как целое число"""
+        """Извлекает минимальную зарплату, возвращает как целое число"""
         if isinstance(self.salary, dict):
             return self.salary.get("from") or 0
         elif isinstance(self.salary, str) and "–" in self.salary:
