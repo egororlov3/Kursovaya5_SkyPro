@@ -1,7 +1,7 @@
 import pytest
 import json
-from scr.json_saver import JSONSaver
-from scr.vacancy import Vacancy
+from src.json_saver import JSONSaver
+from src.vacancy import Vacancy
 
 
 @pytest.fixture

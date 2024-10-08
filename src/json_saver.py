@@ -24,7 +24,7 @@ class JSONSaver:
                 'salary': vacancy.salary,
                 'description': vacancy.description,
             })
-            self.save_to_file()  #Сохраняем после добавления
+            self.save_to_file()  # Сохранение после добавления
 
     def save_to_file(self):
         """Сохраняет все вакансии в файл"""
@@ -34,4 +34,4 @@ class JSONSaver:
     def delete_vacancy(self, vacancy):
         """Удаляет вакансию из файла, если она там есть"""
         self.existing_vacancies = [v for v in self.existing_vacancies if v['url'] != vacancy.url]
-        self.save_to_file()  #Сохраняем после удаления
+        self.save_to_file()  # Сохранение после удаления

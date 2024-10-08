@@ -1,8 +1,8 @@
-from scr.api import HeadHunterAPI
+from src.api import HeadHunterAPI
 from unittest.mock import patch
 
 
-@patch('scr.api.requests.get')
+@patch('src.api.requests.get')
 def test_hh_api_get_vacancies(mock_get):
     mock_response = {
         "items": [
